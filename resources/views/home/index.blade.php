@@ -1,0 +1,28 @@
+@extends('layouts.default')
+
+{{-- sostituisce il placeholder nel titolo dell'head --}}
+@section('page_title', "Homepage Comics")
+
+{{-- Sostituisce il placeholder nel main --}}
+@section('content')
+  
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-6 g-4"> 
+      
+      {{-- Ciclo foreach per stampare tutte le card --}}
+      @foreach ($comics_list as $comic)
+      <div class="col">
+        <div class="card card-comic">
+          <div class="card-img-container">
+            <img class="card-img-top" src="{{ $comic['thumb']}}" alt="">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{ $comic['series']}}</h5>
+          </div>
+        </div>
+      </div>
+      @endforeach
+
+    </div>
+  </div>
+@endsection
