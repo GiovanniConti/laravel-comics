@@ -1,0 +1,9 @@
+.card-comic {
+  border: 0;
+}
+
+.card-comic .card-img-container {
+  max-height: 200px;
+  overflow: hidden;
+}
+
