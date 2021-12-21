@@ -12,16 +12,7 @@
       {{-- Ciclo foreach per stampare tutte le card --}}
       @foreach ($comics_list as $comic)
       <div class="col">
-        <a class="card card-comic"
-          href="{{ route('products.comic_page', ["id" => $comic['id']]) }}"
-        >
-          <div class="card-img-container">
-            <img class="card-img-top" src="{{ $comic['thumb']}}" alt="">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">{{ $comic['series']}}</h5>
-          </div>
-        </a>
+        @include('partials.card')
       </div>
       @endforeach
 
