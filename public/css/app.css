@@ -1,5 +1,7 @@
 .card-comic {
   border: 0;
+  text-decoration: none;
+  color: black;
 }
 
 .card-comic .card-img-container {

@@ -21,7 +21,6 @@ Route::get('/', function () {
     $comic['id'] = $index;
     $final_comics_data[] = $comic;
   }
-  dump($final_comics_data);
 
   return view('home.index', [
     "comics_list" => $final_comics_data
