@@ -7,7 +7,7 @@
     {{-- HERO SECTION --}}
     <section class="hero">
       <div class="hero-container container">
-        <img class="card-img-top" src="{{$comic['thumb']}}" alt="">
+        <img class="" src="{{$comic['thumb']}}" alt="">
       </div>
 
     </section>
@@ -67,7 +67,7 @@
       </div>
       <div class="talent_specs_footer">
         <div class="container">
-          
+
         </div>
       </div>
     </section>
